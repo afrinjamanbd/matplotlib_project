@@ -11,8 +11,8 @@ class SimpleBarChart:
 
     def bar(self, x, y, z):
 
-        plt.barh(x, y, label='x and y')
-        plt.barh(x, z, label='x and z')
+        plt.bar(x - self.width, y, width=self.width, label='x and y')
+        plt.bar(x, z, width=self.width, label='x and z')
         plt.style.use("fivethirtyeight")
         # print(plt.style.available)
         plt.title(self.fig_title)
@@ -21,6 +21,8 @@ class SimpleBarChart:
         plt.tight_layout()
         plt.legend()
         plt.grid(True)
+
+    def showbar(self):
         plt.show()
 
 
