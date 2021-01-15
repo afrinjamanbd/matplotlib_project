@@ -26,19 +26,3 @@ class BarChart(ABCTest):
     def show(self):
         plt.style.use("fivethirtyeight")
         super().show()
-
-
-# class SimpleStackPlot:
-#
-#     def __init__(self, title):
-#         self.title = title
-#
-#     def stackplotting(self, x, p, q, r, s, t, labels):
-#         plt.stackplot(x, p, q, r, s, t, labels=labels)
-#         plt.title(self.title)
-#         plt.tight_layout()
-#         plt.legend()
-#
-#     @staticmethod
-#     def show():
-#         plt.show()

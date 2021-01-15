@@ -14,7 +14,7 @@ class StackPlot(ABCTest):
         pass
 
     def add(self):
-        plt.stackplot(self.arr, labels=self.label_list)
+        plt.stackplot(*self.arr, labels=self.label_list)
 
     def add_new(self, a, b, num, label):
         pass
@@ -23,6 +23,3 @@ class StackPlot(ABCTest):
         plt.tight_layout()
         plt.legend()
         plt.show()
-
-
-

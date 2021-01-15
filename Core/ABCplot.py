@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from matplotlib import pyplot as plt
 
 
+# Abstract Class for Plotting
 class ABCTest(ABC):
     width = .25
     color = None
